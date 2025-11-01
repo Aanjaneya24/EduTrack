@@ -10,7 +10,14 @@
 
 **A comprehensive MERN stack school management platform that streamlines academic administration, classroom organization, and communication between Admins, Teachers, and Students.**
 
-[🚀 Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📦 Installation](#-installation) • [🎯 Usage](#-usage) • [📸 Screenshots](#-screenshots)
+### 🌐 Live Demo
+
+**Frontend:** [https://edu-track-iota.vercel.app](https://edu-track-iota.vercel.app)  
+**Backend API:** [https://edutrack-nm04.onrender.com](https://edutrack-nm04.onrender.com)
+
+*Note: The backend may take 30-50 seconds to wake up on first request (free tier limitation)*
+
+[🚀 Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📦 Installation](#-installation) • [🎯 Usage](#-usage) • [🎭 Guest Demo](#-guest-demo-access)
 
 </div>
 
