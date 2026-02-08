@@ -2,6 +2,7 @@ const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
+const path = require("path")
 // const bodyParser = require("body-parser")
 const app = express()
 const Routes = require("./routes/route.js")
@@ -25,6 +26,14 @@ mongoose
     .catch((err) => console.log("NOT CONNECTED TO NETWORK", err))
 
 app.use('/', Routes);
+
+// Serve static files from the client build directory
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+// Handle React routing, return all requests to React app
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 app.listen(PORT, () => {
     console.log(`Server started at port no. ${PORT}`)
